@@ -1,29 +1,24 @@
 <div id="home">
-  <div class="container">
+  <div class="container container-index">
     <div class="row">
-      <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
-        <h2>This is our Home Page!</h2>
-        <form class="clearfix mb-4" action="POST">
-          <div class="form-group">
-            <label for="example-text">Example Text</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
-          </div>
-          <div class="form-group">
-            <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
-          </div>
-          <button id="submit" class="btn btn-primary float-right">Submit</button>
-        </form>
-        <h3>Examples:</h3>
-        <ul id="example-list" class="list-group">
-          {{#each examples}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
-          {{/each}}
-        </ul>
+      <div class="col-6">
+        <div class="jumbotron-index m-5">
+          <h1>{{msg}}</h1>
+  <p class="lead">A collaborative website for content creators!</p>
+  <hr class="my-4">
+  <p>Welcome to Bitmap! Your destination for content colabs. Here you can find your next great team member.
+    We will help you find artists for your Twitch or a streamer for your great designs and art. With the great community and easy use website,
+    you'll find exactly what you need and a great person to work with.
+  </p>
+</div>
+      </div>
+      <div class="col-6">
+        <div class="jumbotron-index m-5">
+      <h2>Create your account now!</h2>
+      <div class="container container-button d-flex justify-content-center">
+  <a class="btn btn-primary btn-lg" href="#" role="button">Click here!</a>
+  </div>    
+</div>
       </div>
     </div>
   </div>
