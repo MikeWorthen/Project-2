@@ -1,4 +1,7 @@
-/* body{background: rgb(108,117,125);} */
+body{
+    background-image: url(../images/looped-hexagon.png)
+
+}
 .main-container{
     margin: 0;
     padding: 0;
@@ -13,11 +16,21 @@
 }
 /* Box shadow for main content */
 .main-container {
-    box-shadow: 1px 1px 20px 0px black;
+    background: transparent;
+    box-shadow: 1px 1px 15px 10px rgb(139, 164, 236);
+}
+.form-container{
+    height: fit-content;
 }
 
 .createTitle{
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid rgb(139, 164, 236);
+}
+.create-tron{
+    margin-bottom: 0;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.7);
+
 }
 
 .list-group-item {
@@ -59,6 +72,7 @@
     margin-top: 20%;
     width: 60%
   }
+
 
   
    
