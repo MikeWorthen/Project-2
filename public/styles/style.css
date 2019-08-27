@@ -40,7 +40,10 @@ body{
     padding: 0;
     display: flex;
     justify-content: center;
-    margin-top: 8rem;
+    margin-top:5rem;
+}
+.userImg{
+    border: 1px solid black;
 }
 
 .navbar-container{
@@ -77,6 +80,11 @@ body{
     background:whitesmoke;
     height: fit-content;
     margin: 0 auto;
+  }
+
+  .bio{
+      border: 1px solid black;
+      width: 50%;
   }
 
 
