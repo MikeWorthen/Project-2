@@ -14,7 +14,16 @@ module.exports = function(app) {
   app.get("/create", function(req, res) {
     db.Example.findAll({}).then(function(dbExamples) {
       res.render("createAccount", {
-        title: "Create Account",
+        title: "Bitmap - Create Account",
+        msg: "Welcome!",
+        examples: dbExamples
+      });
+    });
+  });
+  app.get("/profile", function(req, res) {
+    db.Example.findAll({}).then(function(dbExamples) {
+      res.render("profile", {
+        title: "Bitmap - My Profile",
         msg: "Welcome!",
         examples: dbExamples
       });
