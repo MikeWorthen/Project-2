@@ -1,5 +1,6 @@
 body{
-    background-image: url(../images/looped-hexagon.png)
+    background-image: url(../images/looped-hexagon.png);
+    font-family: 'Share Tech Mono', monospace;
 
 }
 .main-container{
@@ -7,7 +8,7 @@ body{
     padding: 0;
     background:whitesmoke;
     height: fit-content;
-    position: fixed;
+     position: fixed;
     position: fixed;
     top: 50%;
     left: 50%;
