@@ -7,12 +7,11 @@ body{
     margin: 0;
     padding: 0;
     background:whitesmoke;
-    height: fit-content;
-     position: fixed;
+     height: fit-content;
+    position: fixed;
     position: fixed;
     top: 50%;
     left: 50%;
-    /* bring your own prSefixes */
     transform: translate(-50%, -50%);
 }
 /* Box shadow for main content */
@@ -73,6 +72,13 @@ body{
     background: transparent;
     background: rgba(0, 0, 0, 0.7);
     color: whitesmoke;
+  }
+  .profile-content{
+    margin: 0;
+    padding: 0;
+    background:whitesmoke;
+    height: fit-content;
+    margin: 0 auto;
   }
 
 
