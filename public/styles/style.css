@@ -20,6 +20,27 @@
     border-bottom: 3px solid black;
 }
 
+.list-group-item {
+    line-height: 2.5;
+}
 
+.profile-img-container{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.navbar-container{
+    padding: 0;
+}
+
+.libraries-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+  
    
 
