@@ -41,14 +41,28 @@ body{
     padding: 0;
     display: flex;
     justify-content: center;
-    margin-top:5rem;
 }
 .userImg{
     border: 1px solid black;
 }
+.name-container{
+    margin-top: 5rem;
+    margin-bottom: 1rem;;
+}
+.userName{
+    border: 1px solid black;
+    font-size: 3rem;
+}
 
 .navbar-container{
     padding: 0;
+    box-shadow: 1px 0px 15px black;
+}
+.navbar-brand{
+    font-size: 2rem;
+}
+.nav-link{
+    font-size: 1rem;
 }
 
 .libraries-container{
