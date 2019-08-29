@@ -13,11 +13,10 @@ module.exports = function(app) {
         title: "Bitmap - Create Account",
         msg: "Welcome!",
       });
-  });
   app.get("/profile", function(req, res) {
     db.Bitmaps.findOne({
         where: {
-            id: 3
+            id: 1;
         }
     }).then(function(dbProject2) {
       res.render("profile", {
