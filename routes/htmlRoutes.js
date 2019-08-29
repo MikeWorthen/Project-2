@@ -3,29 +3,29 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
+    
       res.render("index", {
         title: "Bitmap - Home",
         msg: "Welcome To Bitmap!",
-        examples: dbExamples
       });
-    });
   });
   app.get("/create", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
+   
       res.render("createAccount", {
         title: "Bitmap - Create Account",
         msg: "Welcome!",
-        examples: dbExamples
       });
-    });
   });
   app.get("/profile", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
+    db.Bitmaps.findAll({
+      where:{
+         id: 1
+      }
+    }).then(function(dbProject2) {
       res.render("profile", {
         title: "Bitmap - My Profile",
         msg: "Welcome!",
-        examples: dbExamples
+        user: dbProject2
       });
     });
   });
