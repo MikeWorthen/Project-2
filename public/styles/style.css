@@ -47,7 +47,7 @@ body{
 }
 .name-container{
     margin-top: 5rem;
-    margin-bottom: 1rem;;
+    margin-bottom: 1rem;
 }
 .userName{
     border: 1px solid black;
@@ -76,7 +76,7 @@ body{
     padding: 0;
     background:whitesmoke;
     height: fit-content;
-    top: 50%
+    top: 50%;
   }
   /* Box shadow for main content */
   .container-index {
