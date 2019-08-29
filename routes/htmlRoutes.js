@@ -3,38 +3,36 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
       res.render("index", {
         title: "Bitmap - Home",
         msg: "Welcome To Bitmap!",
-        examples: dbExamples
       });
-    });
   });
   app.get("/create", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
       res.render("createAccount", {
         title: "Bitmap - Create Account",
         msg: "Welcome!",
-        examples: dbExamples
       });
-    });
   });
   app.get("/profile", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
+    db.Bitmaps.findOne({
+        where: {
+            id: 3
+        }
+    }).then(function(dbProject2) {
       res.render("profile", {
         title: "Bitmap - My Profile",
         msg: "Welcome!",
-        examples: dbExamples
+        user: dbProject2
       });
     });
   });
 
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
+    db.Project2.findOne({ where: { id: req.params.id } }).then(function(dbProject2) {
       res.render("example", {
-        example: dbExample
+        example: dbProject2
       });
     });
   });

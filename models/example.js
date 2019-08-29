@@ -1,7 +1,7 @@
 // This may be confusing but here Sequelize (capital) references the standard library
 
 module.exports = function(sequelize, DataTypes) {
-  var project2 = sequelize.define("Bitmap", {
+  var Project2 = sequelize.define("Bitmaps", {
     username: DataTypes.STRING,
     bio: DataTypes.STRING,
     rating:{
@@ -15,6 +15,6 @@ module.exports = function(sequelize, DataTypes) {
   },
     profileImage: DataTypes.STRING,
   });
-  return project2;
+  return Project2;
 };
 
