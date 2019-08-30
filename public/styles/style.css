@@ -102,8 +102,25 @@ body{
       border: 1px solid black;
       width: 50%;
   }
-
-
-  
-   
-
+  @media (min-width: 640px){
+ 
+    
+     
+    }
+     
+    @media (min-width: 768px){
+     
+    
+     
+    }
+     
+    @media (min-width: 1024px){
+     
+    
+     
+    }
+     
+    @media (min-width: 1200px){
+     
+    
+    }
