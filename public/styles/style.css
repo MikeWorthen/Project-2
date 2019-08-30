@@ -102,25 +102,538 @@ body{
       border: 1px solid black;
       width: 50%;
   }
-  @media (min-width: 640px){
- 
-    
-     
+  @media (min-width: 320px){
+    .main-container{
+        margin: 0;
+        padding: 0;
+        background:whitesmoke;
+         height: fit-content;
+        position: fixed;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
+    /* Box shadow for main content */
+    .main-container {
+        background: transparent;
+        box-shadow: 1px 1px 15px 10px rgb(139, 164, 236);
+    }
+    .form-container{
+        height: fit-content;
+    }
+    
+    .createTitle{
+        border-bottom: 3px solid rgb(139, 164, 236);
+    }
+    .create-tron{
+        margin-bottom: 0;
+        color: whitesmoke;
+        background: rgba(0, 0, 0, 0.7);
+    
+    }
+    
+    .list-group-item {
+        line-height: 2.5;
+    }
+    
+    .profile-img-container{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .userImg{
+        border: 1px solid black;
+    }
+    .name-container{
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+    }
+    .userName{
+        border: 1px solid black;
+        font-size: 3rem;
+    }
+    
+    .navbar-container{
+        padding: 0;
+        box-shadow: 1px 0px 15px black;
+    }
+    .navbar-brand{
+        font-size: 2rem;
+    }
+    .nav-link{
+        font-size: 1rem;
+    }
+    
+    .libraries-container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    /* body{background: rgb(108,117,125);} */
+    .container-index{
+        margin-top: 20%;
+        padding: 0;
+        background:whitesmoke;
+        height: fit-content;
+        top: 50%;
+      }
+      /* Box shadow for main content */
+      .container-index {
+        border-bottom: 3px solid rgb(139, 164, 236);
+        box-shadow: 1px 1px 15px 10px rgb(139, 164, 236);
+        height: 100%;
+        vertical-align: middle;
+      }
+      .container2{
+        margin-top: 20%;
+        margin-left: 10%;
+        background: transparent;
+        background: rgba(0, 0, 0, 0.7);
+        color: whitesmoke;
+        height: 100%;
+        vertical-align: middle;
+      }
+      .profile-content{
+        margin: 0;
+        padding: 0;
+        background:whitesmoke;
+        height: fit-content;
+        margin: 0 auto;
+      }
+    
+      .bio{
+          border: 1px solid black;
+          width: 50%;
+      }
+  }
+  @media (min-width: 576px){
+
+.main-container{
+    margin: 0;
+    padding: 0;
+    background:whitesmoke;
+     height: fit-content;
+    position: fixed;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Box shadow for main content */
+.main-container {
+    background: transparent;
+    box-shadow: 1px 1px 15px 10px rgb(139, 164, 236);
+}
+.form-container{
+    height: fit-content;
+}
+
+.createTitle{
+    border-bottom: 3px solid rgb(139, 164, 236);
+}
+.create-tron{
+    margin-bottom: 0;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.7);
+
+}
+
+.list-group-item {
+    line-height: 2.5;
+}
+
+.profile-img-container{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.userImg{
+    border: 1px solid black;
+}
+.name-container{
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+.userName{
+    border: 1px solid black;
+    font-size: 3rem;
+}
+
+.navbar-container{
+    padding: 0;
+    box-shadow: 1px 0px 15px black;
+}
+.navbar-brand{
+    font-size: 2rem;
+}
+.nav-link{
+    font-size: 1rem;
+}
+
+.libraries-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* body{background: rgb(108,117,125);} */
+.container-index{
+    margin-top: 20%;
+    padding: 0;
+    background:whitesmoke;
+    height: fit-content;
+    top: 50%;
+  }
+  /* Box shadow for main content */
+  .container-index {
+    border-bottom: 3px solid rgb(139, 164, 236);
+    box-shadow: 1px 1px 15px 10px rgb(139, 164, 236);
+    height: 100%;
+    vertical-align: middle;
+  }
+  .container2{
+    margin-top: 20%;
+    margin-left: 10%;
+    background: transparent;
+    background: rgba(0, 0, 0, 0.7);
+    color: whitesmoke;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .profile-content{
+    margin: 0;
+    padding: 0;
+    background:whitesmoke;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .bio{
+      border: 1px solid black;
+      width: 50%;
+  }
+  }
+
      
     @media (min-width: 768px){
      
-    
+        .main-container{
+            margin: 0;
+            padding: 0;
+            background:whitesmoke;
+             height: fit-content;
+            position: fixed;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /* Box shadow for main content */
+        .main-container {
+            background: transparent;
+            box-shadow: 1px 1px 15px 10px rgb(139, 164, 236);
+        }
+        .form-container{
+            height: fit-content;
+        }
+        
+        .createTitle{
+            border-bottom: 3px solid rgb(139, 164, 236);
+        }
+        .create-tron{
+            margin-bottom: 0;
+            color: whitesmoke;
+            background: rgba(0, 0, 0, 0.7);
+        
+        }
+        
+        .list-group-item {
+            line-height: 2.5;
+        }
+        
+        .profile-img-container{
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .userImg{
+            border: 1px solid black;
+        }
+        .name-container{
+            margin-top: 5rem;
+            margin-bottom: 1rem;
+        }
+        .userName{
+            border: 1px solid black;
+            font-size: 3rem;
+        }
+        
+        .navbar-container{
+            padding: 0;
+            box-shadow: 1px 0px 15px black;
+        }
+        .navbar-brand{
+            font-size: 2rem;
+        }
+        .nav-link{
+            font-size: 1rem;
+        }
+        
+        .libraries-container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        /* body{background: rgb(108,117,125);} */
+        .container-index{
+            margin-top: 20%;
+            padding: 0;
+            background:whitesmoke;
+            height: fit-content;
+            top: 50%;
+          }
+          /* Box shadow for main content */
+          .container-index {
+            border-bottom: 3px solid rgb(139, 164, 236);
+            box-shadow: 1px 1px 15px 10px rgb(139, 164, 236);
+            height: 100%;
+            vertical-align: middle;
+          }
+          .container2{
+            margin-top: 20%;
+            margin-left: 10%;
+            background: transparent;
+            background: rgba(0, 0, 0, 0.7);
+            color: whitesmoke;
+            height: 100%;
+            vertical-align: middle;
+          }
+          .profile-content{
+            margin: 0;
+            padding: 0;
+            background:whitesmoke;
+            height: fit-content;
+            margin: 0 auto;
+          }
+        
+          .bio{
+              border: 1px solid black;
+              width: 50%;
+          }
      
     }
      
     @media (min-width: 1024px){
-     
+        .main-container{
+            margin: 0;
+            padding: 0;
+            background:whitesmoke;
+             height: fit-content;
+            position: fixed;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /* Box shadow for main content */
+        .main-container {
+            background: transparent;
+            box-shadow: 1px 1px 15px 10px rgb(139, 164, 236);
+        }
+        .form-container{
+            height: fit-content;
+        }
+        
+        .createTitle{
+            border-bottom: 3px solid rgb(139, 164, 236);
+        }
+        .create-tron{
+            margin-bottom: 0;
+            color: whitesmoke;
+            background: rgba(0, 0, 0, 0.7);
+        
+        }
+        
+        .list-group-item {
+            line-height: 2.5;
+        }
+        
+        .profile-img-container{
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .userImg{
+            border: 1px solid black;
+        }
+        .name-container{
+            margin-top: 5rem;
+            margin-bottom: 1rem;
+        }
+        .userName{
+            border: 1px solid black;
+            font-size: 3rem;
+        }
+        
+        .navbar-container{
+            padding: 0;
+            box-shadow: 1px 0px 15px black;
+        }
+        .navbar-brand{
+            font-size: 2rem;
+        }
+        .nav-link{
+            font-size: 1rem;
+        }
+        
+        .libraries-container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        /* body{background: rgb(108,117,125);} */
+        .container-index{
+            margin-top: 20%;
+            padding: 0;
+            background:whitesmoke;
+            height: fit-content;
+            top: 50%;
+          }
+          /* Box shadow for main content */
+          .container-index {
+            border-bottom: 3px solid rgb(139, 164, 236);
+            box-shadow: 1px 1px 15px 10px rgb(139, 164, 236);
+            height: 100%;
+            vertical-align: middle;
+          }
+          .container2{
+            margin-top: 20%;
+            margin-left: 10%;
+            background: transparent;
+            background: rgba(0, 0, 0, 0.7);
+            color: whitesmoke;
+            height: 100%;
+            vertical-align: middle;
+          }
+          .profile-content{
+            margin: 0;
+            padding: 0;
+            background:whitesmoke;
+            height: fit-content;
+            margin: 0 auto;
+          }
+        
+          .bio{
+              border: 1px solid black;
+              width: 50%;
+          }
     
      
     }
      
     @media (min-width: 1200px){
-     
+        .main-container{
+            margin: 0;
+            padding: 0;
+            background:whitesmoke;
+             height: fit-content;
+            position: fixed;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /* Box shadow for main content */
+        .main-container {
+            background: transparent;
+            box-shadow: 1px 1px 15px 10px rgb(139, 164, 236);
+        }
+        .form-container{
+            height: fit-content;
+        }
+        
+        .createTitle{
+            border-bottom: 3px solid rgb(139, 164, 236);
+        }
+        .create-tron{
+            margin-bottom: 0;
+            color: whitesmoke;
+            background: rgba(0, 0, 0, 0.7);
+        
+        }
+        
+        .list-group-item {
+            line-height: 2.5;
+        }
+        
+        .profile-img-container{
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .userImg{
+            border: 1px solid black;
+        }
+        .name-container{
+            margin-top: 5rem;
+            margin-bottom: 1rem;
+        }
+        .userName{
+            border: 1px solid black;
+            font-size: 3rem;
+        }
+        
+        .navbar-container{
+            padding: 0;
+            box-shadow: 1px 0px 15px black;
+        }
+        .navbar-brand{
+            font-size: 2rem;
+        }
+        .nav-link{
+            font-size: 1rem;
+        }
+        
+        .libraries-container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        /* body{background: rgb(108,117,125);} */
+        .container-index{
+            margin-top: 20%;
+            padding: 0;
+            background:whitesmoke;
+            height: fit-content;
+            top: 50%;
+          }
+          /* Box shadow for main content */
+          .container-index {
+            border-bottom: 3px solid rgb(139, 164, 236);
+            box-shadow: 1px 1px 15px 10px rgb(139, 164, 236);
+            height: 100%;
+            vertical-align: middle;
+          }
+          .container2{
+            margin-top: 20%;
+            margin-left: 10%;
+            background: transparent;
+            background: rgba(0, 0, 0, 0.7);
+            color: whitesmoke;
+            height: 100%;
+            vertical-align: middle;
+          }
+          .profile-content{
+            margin: 0;
+            padding: 0;
+            background:whitesmoke;
+            height: fit-content;
+            margin: 0 auto;
+          }
+        
+          .bio{
+              border: 1px solid black;
+              width: 50%;
+          }
     
     }
