@@ -1,12 +1,7 @@
 
 
-var userSearch = $('.search').on('click', function (event) {
-    event.preventDefault()
-
-    console.log(this.val())
-})
-
-
-
-
-
+  $("#search-btn").on("click", function(event) {
+    event.preventDefault();
+  
+    console.log("works");
+  });
