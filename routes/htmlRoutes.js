@@ -18,7 +18,7 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/profile/:user?", function(req, res) {
+  app.get("/Myprofile/:user?", function(req, res) {
     db.Bitmaps.findOne({
       where: {
         username: req.params.user
@@ -33,14 +33,14 @@ module.exports = function(app) {
   });
 
   app.get("/profile/:search?", (req, res) => {
-    let { user } = req.query;
+    let { term } = req.query;
+    console.log(term);
 
     db.Bitmaps.findOne({
-      where: { username: { [op.like]: '%'+ user + '%' } }})
-      .then(function(dbProject2) {
+      where: { username: { [Op.like]: "%" + term + "%" } }
+    }).then(function(dbProject2) {
       res.render("profile", {
-        title: "Bitmap - My Profile",
-        msg: "Welcome!",
+        title: "Bitmap -" + term + "Profile",
         user: dbProject2
       });
     });
