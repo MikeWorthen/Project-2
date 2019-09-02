@@ -29,9 +29,9 @@
                         </div>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <form action="/profile" method="GET"  class="form-inline search-form my-2 my-lg-0">
+                    <input id="user-search" class="form-control mr-sm-2" name="term" type="text" placeholder="search" >
+                    <button id="search-btn" class="btn btn-outline-success my-2 my-sm-0 "  value="searched" type="submit">Search</button>
                 </form>
             </div>
         </nav>
@@ -62,9 +62,7 @@
     </div>
 
     <div class="bio-container container text-center d-flex justify-content-center mt-3 mb-3">
-        <div class="bio">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem delectus laudantium, vel nihil
-            quasi nam reprehenderit asperiores numquam eius eveniet? Quo ex est illo totam fugiat quae voluptatibus!
-            Maiores, aliquam.</div>
+        <div class="bio">{{user.bio}}</div>
     </div>
 
     <div class="profile-body mb-3 container">
@@ -115,3 +113,4 @@
         </div>
     </div>
 </div>
+

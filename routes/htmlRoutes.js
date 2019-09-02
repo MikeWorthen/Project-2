@@ -1,24 +1,28 @@
 var db = require("../models");
+const Sequalize = require("sequelize");
+const Op = Sequalize.Op;
 
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-      res.render("index", {
-        title: "Bitmap - Home",
-        msg: "Welcome To Bitmap!",
-      });
+    res.render("index", {
+      title: "Bitmap - Home",
+      msg: "Welcome To Bitmap!"
+    });
   });
+
   app.get("/create", function(req, res) {
-      res.render("createAccount", {
-        title: "Bitmap - Create Account",
-        msg: "Welcome!",
-      });
+    res.render("createAccount", {
+      title: "Bitmap - Create Account",
+      msg: "Welcome!"
+    });
   });
-  app.get("/profile", function(req, res) {
+
+  app.get("/Myprofile/:user?", function(req, res) {
     db.Bitmaps.findOne({
-        where: {
-            id: 3
-        }
+      where: {
+        username: req.params.user
+      }
     }).then(function(dbProject2) {
       res.render("profile", {
         title: "Bitmap - My Profile",
@@ -28,11 +32,16 @@ module.exports = function(app) {
     });
   });
 
-  // Load example page and pass in an example by id
-  app.get("/example/:id", function(req, res) {
-    db.Project2.findOne({ where: { id: req.params.id } }).then(function(dbProject2) {
-      res.render("example", {
-        example: dbProject2
+  app.get("/profile/:search?", (req, res) => {
+    let { term } = req.query;
+    console.log(term);
+
+    db.Bitmaps.findOne({
+      where: { username: { [Op.like]: "%" + term + "%" } }
+    }).then(function(dbProject2) {
+      res.render("profile", {
+        title: "Bitmap -" + term + "Profile",
+        user: dbProject2
       });
     });
   });
