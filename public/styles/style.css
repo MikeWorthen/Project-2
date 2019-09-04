@@ -77,12 +77,15 @@ body{
     background:whitesmoke;
     height: fit-content;
     top: 50%;
-  }
+}
+
+
+
   /* Box shadow for main content */
-  .container-index {
+.container-index {
     border-bottom: 3px solid rgb(139, 164, 236);
     box-shadow: 1px 1px 15px 10px rgb(139, 164, 236);
-  }
+}
   .container2{
     margin-top: 20%;
     margin-left: 10%;
@@ -250,6 +253,8 @@ body{
 }
 .userImg{
     border: 1px solid black;
+    width: 360px;
+    height: 460px;
 }
 .name-container{
     margin-top: 5rem;

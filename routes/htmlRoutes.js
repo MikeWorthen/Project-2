@@ -33,14 +33,14 @@ module.exports = function(app) {
   });
 
   app.get("/profile/:search?", (req, res) => {
-    let { term } = req.query;
-    console.log(term);
+    let { user } = req.query;
+    console.log(user);
 
     db.Bitmaps.findOne({
-      where: { username: { [Op.like]: "%" + term + "%" } }
+      where: { username: { [Op.like]: "%" + user + "%" } }
     }).then(function(dbProject2) {
       res.render("profile", {
-        title: "Bitmap -" + term + "Profile",
+        title: "Bitmap -" + user + " Profile",
         user: dbProject2
       });
     });

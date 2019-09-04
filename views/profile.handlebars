@@ -30,7 +30,7 @@
                     </li>
                 </ul>
                 <form action="/profile" method="GET"  class="form-inline search-form my-2 my-lg-0">
-                    <input id="user-search" class="form-control mr-sm-2" name="term" type="text" placeholder="search" >
+                    <input id="user-search" class="form-control mr-sm-2" name="user" type="text" placeholder="search" >
                     <button id="search-btn" class="btn btn-outline-success my-2 my-sm-0 "  value="searched" type="submit">Search</button>
                 </form>
             </div>
@@ -41,7 +41,7 @@
         <div class="userName">{{user.username}}</div>
     </div>
     <div class="profile-img-container container">
-        <img class="userImg" src="https://via.placeholder.com/360" alt="profeile img">
+        <img class="userImg" src="{{user.profileImage}}" alt="profeile img">
     </div>
 
     <div class="social-icons container">
