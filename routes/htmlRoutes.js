@@ -32,6 +32,14 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/search", function(req, res) {
+    res.render("searchProfile", {
+      title: "Bitmap - Search",
+      msg: "Welcome To Bitmap!"
+    });
+  });
+
+
   app.get("/profile/:search?", (req, res) => {
     let { user } = req.query;
     console.log(user);
@@ -45,6 +53,7 @@ module.exports = function(app) {
       });
     });
   });
+ 
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
