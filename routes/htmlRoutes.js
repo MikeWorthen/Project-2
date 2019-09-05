@@ -45,7 +45,7 @@ module.exports = function(app) {
     console.log(user);
 
     db.Bitmaps2.findOne({
-      where: { username: { [Op.like]: "%" + term + "%" } }
+      where: { username: { [Op.like]: "%" + user + "%" } }
     }).then(function(dbProject2) {
       res.render("profile", {
         title: "Bitmap -" + user + " Profile",
