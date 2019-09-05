@@ -1,6 +1,5 @@
 var db = require("../models");
-const Sequalize = require("sequelize");
-const Op = Sequalize.Op;
+var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function(app) {
   // Load index page
@@ -10,38 +9,61 @@ module.exports = function(app) {
       msg: "Welcome To Bitmap!"
     });
   });
-
   app.get("/create", function(req, res) {
     res.render("createAccount", {
       title: "Bitmap - Create Account",
       msg: "Welcome!"
     });
   });
-
-  app.get("/Myprofile/:user?", function(req, res) {
-    db.Bitmaps.findOne({
+  app.get("/login", isAuthenticated, function(req, res) {
+    res.render("login", {
+      title: "Bitmap - Home",
+      msg: "Welcome To Bitmap!"
+    });
+  });
+  app.get("/profile", function(req, res) {
+    db.User.findOne({
       where: {
-        username: req.params.user
+        user: email
       }
-    }).then(function(dbProject2) {
+    }).then(function(dbUser) {
       res.render("profile", {
         title: "Bitmap - My Profile",
         msg: "Welcome!",
-        user: dbProject2
+        user: dbUser
       });
     });
   });
 
-  app.get("/profile/:search?", (req, res) => {
-    let { term } = req.query;
-    console.log(term);
+  // app.get("/", function(req, res) {
+  //   // If the user already has an account send them to the members page
+  //   if (req.user) {
+  //     res.redirect("/profile");
+  //   }
+  //   res.sendFile(path.join(__dirname, "profile.handlebars"));
+  // });
 
-    db.Bitmaps.findOne({
-      where: { username: { [Op.like]: "%" + term + "%" } }
-    }).then(function(dbProject2) {
-      res.render("profile", {
-        title: "Bitmap -" + term + "Profile",
-        user: dbProject2
+  // app.get("/login", function(req, res) {
+  //   // If the user already has an account send them to the members page
+  //   if (req.user) {
+  //     res.redirect("/profile");
+  //   }
+  //   res.sendFile(path.join(__dirname, "profile.handlebars"));
+  // });
+
+  // // Here we've add our isAuthenticated middleware to this route.
+  // // If a user who is not logged in tries to access this route they will be redirected to the signup page
+  // app.get("/create", isAuthenticated, function(req, res) {
+  //   res.sendFile(path.join(__dirname, "create"));
+  // });
+
+  // Load example page and pass in an example by id
+  app.get("/example/:id", function(req, res) {
+    db.User.findOne({ where: { id: req.params.id } }).then(function(
+      dbProject2
+    ) {
+      res.render("login", {
+        example: dbProject2
       });
     });
   });
