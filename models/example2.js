@@ -11,12 +11,10 @@ module.exports = function(sequelize, DataTypes) {
             max: 5
         }
     },
-    
       profileImage: DataTypes.STRING,
       galleryImage1: DataTypes.STRING,
       galleryImage2: DataTypes.STRING,
-      galleryImage3: DataTypes.STRING,
-      
+      galleryImage3: DataTypes.STRING, 
     });
   
     
