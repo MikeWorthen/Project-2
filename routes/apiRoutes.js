@@ -6,7 +6,7 @@ module.exports = function(app) {
     if (req.params.users) {
       // Display the JSON for ONLY that user.
       // Displays user where username = req.params.user
-      db.Bitmaps.findOne({
+      db.Bitmaps2.findOne({
         where: {
           username: req.params.users
         }
@@ -14,7 +14,7 @@ module.exports = function(app) {
         return res.json(result);
       });
     } else {
-      db.Bitmaps.findAll().then(function(result) {
+      db.Bitmaps2.findAll().then(function(result) {
         return res.json(result);
       });
     }
