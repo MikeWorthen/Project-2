@@ -19,7 +19,7 @@ module.exports = function(app) {
   });
 
   app.get("/Myprofile/:user?", function(req, res) {
-    db.Bitmaps.findOne({
+    db.Bitmaps2.findOne({
       where: {
         username: req.params.user
       }
@@ -36,7 +36,7 @@ module.exports = function(app) {
     let { term } = req.query;
     console.log(term);
 
-    db.Bitmaps.findOne({
+    db.Bitmaps2.findOne({
       where: { username: { [Op.like]: "%" + term + "%" } }
     }).then(function(dbProject2) {
       res.render("profile", {
