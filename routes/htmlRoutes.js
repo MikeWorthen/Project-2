@@ -32,19 +32,28 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/search", function(req, res) {
+    res.render("searchProfile", {
+      title: "Bitmap - Search",
+      msg: "Welcome To Bitmap!"
+    });
+  });
+
+
   app.get("/profile/:search?", (req, res) => {
-    let { term } = req.query;
-    console.log(term);
+    let { user } = req.query;
+    console.log(user);
 
     db.Bitmaps2.findOne({
       where: { username: { [Op.like]: "%" + term + "%" } }
     }).then(function(dbProject2) {
       res.render("profile", {
-        title: "Bitmap -" + term + "Profile",
+        title: "Bitmap -" + user + " Profile",
         user: dbProject2
       });
     });
   });
+ 
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
