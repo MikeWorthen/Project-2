@@ -1,3 +1,3 @@
-INSERT INTO Bitmaps (username, bio) VALUES ('Dwaered123', "Hello I am Dwaered123");
-INSERT INTO Bitmaps (username, bio) VALUES ('Ocerikath', "Hello I am Ocerikath");
-INSERT INTO Bitmaps (username, bio) VALUES ('Driloth987', "Hello I am Driloth987");
+INSERT INTO Bitmaps2s (username, bio) VALUES ('Dusty Grubbs', "Hello I am Dusty and I am a Twitch Streamer looking for help with my stream interface and overlays");
+INSERT INTO Bitmaps2s (username, bio) VALUES ('Chris P. Bacon', "Hello I am ChrisP and I am a Graphic Designer looking to help Streamers and Content Creators with all of their design needs.");
+INSERT INTO Bitmaps2s (username, bio) VALUES ('Arty Fischel', "Hello I am Arty and I am a Graphic Designer looking to help Streamers and Content Creators with all of their disign needs.");
