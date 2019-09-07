@@ -42,10 +42,10 @@
         <div class="userName">{{user.username}}</div>
     </div>
     <div class="profile-img-container container">
-        <img class="userImg" src="{{user.profileImage}}" alt="profile img">
+        <img class="profileImg" src="{{user.profileImage}}" alt="profile img">
     </div>
 
-    <div class="social-icons container">
+    <div class="social-icons container mt-4">
         <div class="social-buttons text-center mb-3">
             <a href="https://www.facebook.com/Kickerz22/" target="none"><button style="font-size: 2em"
                     class="fab fa-facebook-square btn-lg mr-2"></button></a>
@@ -66,7 +66,8 @@
         <div class="bio">{{user.bio}}</div>
     </div>
 
-    <div class="profile-body mb-3 container">
+        <header class="display-3 text-center galleryHeader">My gallery</header>
+    <div class="profile-body mb-3 container gallery-container">
         <img class="userImg" src="{{user.galleryImage1}}" alt="profeile img">
         <img class="userImg" src="{{user.galleryImage2}}" alt="profeile img">
         <img class="userImg" src="{{user.galleryImage3}}" alt="profeile img">
