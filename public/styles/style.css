@@ -42,6 +42,17 @@ body{
     display: flex;
     justify-content: center;
 }
+.profileImg{
+    height: 500px;
+    width:500px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 4px  black;
+}
+
+.userImg{
+    width: 200px;
+    height: 200px;
+}
 .userImg{
     border: 1px solid black;
 }
@@ -153,6 +164,12 @@ body{
         display: flex;
         justify-content: center;
     }
+    .profileImg{
+        height: 500px;
+        width:500px;
+        border: 1px solid black;
+        box-shadow: 3px 3px 4px  black;
+    }
     .userImg{
         border: 1px solid black;
     }
@@ -258,6 +275,12 @@ body{
     padding: 0;
     display: flex;
     justify-content: center;
+}
+.profileImg{
+    height: 500px;
+    width:500px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 4px  black;
 }
 .userImg{
     border: 1px solid black;
@@ -369,6 +392,12 @@ body{
             display: flex;
             justify-content: center;
         }
+        .profileImg{
+            height: 500px;
+            width:500px;
+            border: 1px solid black;
+            box-shadow: 3px 3px 4px  black;
+        }
         .userImg{
             border: 1px solid black;
         }
@@ -475,6 +504,12 @@ body{
             padding: 0;
             display: flex;
             justify-content: center;
+        }
+        .profileImg{
+            height: 500px;
+            width:500px;
+            border: 1px solid black;
+            box-shadow: 3px 3px 4px  black;
         }
         .userImg{
             border: 1px solid black;
@@ -584,8 +619,22 @@ body{
             display: flex;
             justify-content: center;
         }
+        .profileImg{
+            height: 500px;
+            width:500px;
+            border: 1px solid black;
+            box-shadow: 3px 3px 4px  black;
+        }
+        .gallery-container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
         .userImg{
             border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            margin: 2rem;
         }
         .name-container{
             margin-top: 5rem;
