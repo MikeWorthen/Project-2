@@ -1,23 +1,23 @@
 {
   "development": {
     "username": "root",
-    "password": "root",
-    "database": "project2",
-    "host": "localhost",
-    "port": "8889",
+    "password": "password",
+    "database": "Bitmap",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "root",
-    "database": "testdb",
-    "host": "localhost",
-    "port": "8889",
-    "dialect": "mysql",
-    "logging": false
+    "password": "password",
+    "database": "Bitmap_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
   },
   "production": {
-    "use_env_variable": "JAWSDB_URL",
+    "username": "root",
+    "password": "password",
+    "database": "database_production",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   }
 }
