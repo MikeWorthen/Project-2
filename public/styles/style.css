@@ -36,11 +36,47 @@ body{
 .list-group-item {
     line-height: 2.5;
 }
+.fa-facebook-square{
+    background-color: rgb(14, 14, 223);
+    color: white;
+}
+.fa-twitch{
+    background-color: blueviolet;
+    color: white;
+}
+.fa-instagram{
+    background-color: rgb(193,53,132);
+    color: white;
+}
+
+.fa-linkedin{
+    background-color: white;
+    color: rgb(64,93,230);
+}
+
+.galleryHeader{
+
+    margin: 0 auto;
+    width: 15rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 3rem;
+}
 
 .profile-img-container{
     padding: 0;
     display: flex;
     justify-content: center;
+}
+.profileImg{
+    height: 500px;
+    width:500px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 4px  black;
+}
+
+.userImg{
+    width: 200px;
+    height: 200px;
 }
 .userImg{
     border: 1px solid black;
@@ -153,6 +189,12 @@ body{
         display: flex;
         justify-content: center;
     }
+    .profileImg{
+        height: 500px;
+        width:500px;
+        border: 1px solid black;
+        box-shadow: 3px 3px 4px  black;
+    }
     .userImg{
         border: 1px solid black;
     }
@@ -258,6 +300,12 @@ body{
     padding: 0;
     display: flex;
     justify-content: center;
+}
+.profileImg{
+    height: 500px;
+    width:500px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 4px  black;
 }
 .userImg{
     border: 1px solid black;
@@ -369,6 +417,12 @@ body{
             display: flex;
             justify-content: center;
         }
+        .profileImg{
+            height: 500px;
+            width:500px;
+            border: 1px solid black;
+            box-shadow: 3px 3px 4px  black;
+        }
         .userImg{
             border: 1px solid black;
         }
@@ -475,6 +529,12 @@ body{
             padding: 0;
             display: flex;
             justify-content: center;
+        }
+        .profileImg{
+            height: 500px;
+            width:500px;
+            border: 1px solid black;
+            box-shadow: 3px 3px 4px  black;
         }
         .userImg{
             border: 1px solid black;
@@ -584,8 +644,22 @@ body{
             display: flex;
             justify-content: center;
         }
+        .profileImg{
+            height: 500px;
+            width:500px;
+            border: 1px solid black;
+            box-shadow: 3px 3px 4px  black;
+        }
+        .gallery-container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
         .userImg{
             border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            margin: 2rem;
         }
         .name-container{
             margin-top: 5rem;
