@@ -19,7 +19,7 @@ module.exports = function(app) {
   });
 
   app.get("/Myprofile/:user?", function(req, res) {
-    db.Bitmaps.findOne({
+    db.Bitmaps2.findOne({
       where: {
         username: req.params.user
       }
@@ -32,11 +32,19 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/search", function(req, res) {
+    res.render("searchProfile", {
+      title: "Bitmap - Search",
+      msg: "Welcome To Bitmap!"
+    });
+  });
+
+
   app.get("/profile/:search?", (req, res) => {
     let { user } = req.query;
     console.log(user);
 
-    db.Bitmaps.findOne({
+    db.Bitmaps2.findOne({
       where: { username: { [Op.like]: "%" + user + "%" } }
     }).then(function(dbProject2) {
       res.render("profile", {
@@ -45,6 +53,7 @@ module.exports = function(app) {
       });
     });
   });
+ 
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
